@@ -13,6 +13,8 @@ const config: Config = {
       },
       colors: {
         "primary": "#0D0B0B",
+        "purple": "#9747FF",
+        "gray": "#252323"
       },
       backgroundClip: {
         text: 'text'
@@ -38,6 +40,13 @@ const config: Config = {
           'backgroundClip': 'text',
           'color': 'transparent'
         },
+        ".border-gradient" :{
+          "border-width": "2px",
+          "border-style": "solid",
+          "border-image": 'linear-gradient(to right, #00FF94, #43DBFD)',
+          "border-image-slice": "1",
+          "border-radius": "6px"
+        }
       };
       addUtilities(newUtilities, {
         variants: ['responsive', 'hover'],
