@@ -1,16 +1,14 @@
-"use client"
-
-import { GlobalProvider } from '@/features/providers';
-// import type { Metadata } from 'next';
-import { Open_Sans } from 'next/font/google';
-import "primereact/resources/themes/lara-light-cyan/theme.css";
+import { GlobalProvider } from '@/features/providers'
+import type { Metadata } from 'next'
+import { Open_Sans } from 'next/font/google'
+// import './globals.css'
 
 const openSans = Open_Sans({ subsets: ['latin'] })
 
-// export const metadata: Metadata = {
-//   title: "Rejuna's Portfolio",
-//   description: 'This is a personal portfolio',
-// }
+export const metadata: Metadata = {
+  title: "Rejuna\'s Portfolio",
+  description: 'This is a personal portfolio',
+}
 
 type TProps = {
   children: React.ReactNode
@@ -21,11 +19,23 @@ export default function RootLayout({
 }: TProps) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              const style = document.createElement('style')
+              style.innerHTML = '@layer tailwind-base, primereact, tailwind-utilities;'
+              style.setAttribute('type', 'text/css')
+              document.querySelector('head').prepend(style)
+            `,
+          }}
+        />
+      </head>
+      <body className={openSans.className}>
         <GlobalProvider>
-          <body className={openSans.className}>
-              {children}
-          </body>
+          {children}
         </GlobalProvider>
+      </body>
     </html>
   )
 }
