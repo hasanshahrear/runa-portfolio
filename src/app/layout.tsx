@@ -6,7 +6,7 @@ import './globals.css'
 const openSans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Rejuna\'s Portfolio',
+  title: "Rejuna's Portfolio",
   description: 'This is a personal portfolio',
 }
 
@@ -19,11 +19,11 @@ export default function RootLayout({
 }: TProps) {
   return (
     <html lang="en">
-      <body className={openSans.className}>
         <GlobalProvider>
-          {children}
+          <body className={openSans.className}>
+              {children}
+          </body>
         </GlobalProvider>
-      </body>
     </html>
   )
 }
