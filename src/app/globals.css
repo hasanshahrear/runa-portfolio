@@ -8,3 +8,11 @@
   @tailwind components;
   @tailwind utilities;
 }
+
+.btn-primary {
+  @apply bg-gradient-linear border-none text-primary
+}
+
+.btn-secondary {
+  @apply global-background border-gradient border-none text-primary
+}

@@ -20,12 +20,12 @@ export function HeroSection(){
                 <div className="flex gap-4">
                     <Button label="Hire Me" pt={{
                         root: {
-                            className: "bg-gradient-linear border-none text-primary"
+                            className: "btn-primary"
                         }
                     }} />
                     <Button label="View Resume" pt={{
                         root: {
-                            className: "global-background border-gradient border-none text-primary"
+                            className: "btn-secondary"
                         }
                     }} />
                 </div>

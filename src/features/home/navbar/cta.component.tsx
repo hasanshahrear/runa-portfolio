@@ -5,7 +5,7 @@ export function CTA(){
     return (
         <Button label="Download CV" pt={{
             root: {
-                className: "bg-gradient-linear border-none text-primary"
+                className: "btn-primary",
             }
         }}/>
     )
