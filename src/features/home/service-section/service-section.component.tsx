@@ -2,7 +2,6 @@ import { Heading } from "@/features/ui";
 import Image from "next/image";
 
 export function ServiceSection(){
-    const cardClass = ""
     return(
         <div className=" bg-[#DFFCF259] py-28">
             <div className="container grid grid-cols-12 mb-20">
