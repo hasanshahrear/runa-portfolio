@@ -7,7 +7,7 @@ import { FaBehance, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa"
 
 export function AboutMe(){
     return (
-        <div className="min-h-[540px] bg-amber-200 flex items-center justify-center">
+        <div className="min-h-[540px] flex items-center justify-center">
             <div className="container text-center grid grid-cols-12">
                <div className="col-span-3">
 

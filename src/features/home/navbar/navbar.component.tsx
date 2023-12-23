@@ -21,8 +21,8 @@ export function Navbar(){
 
 
     return (
-        <nav className={`sticky top-0 py-6 transition-all duration-300 ${
-            windowSize === true ? 'bg-white bg-opacity-90 shadow-xl' : 'bg-transparent'
+        <nav className={`sticky top-0 z-50 py-6 transition-all duration-300 ${
+            windowSize === true ? 'bg-white bg-opacity-90 shadow-xl' : 'bg-[#DFFCF259]'
           }`}>
             <div className="container flex justify-between items-center">
                 <Logo/>

@@ -46,6 +46,15 @@ const config: Config = {
           "border-image": 'linear-gradient(to right, #00FF94, #43DBFD)',
           "border-image-slice": "1",
           "border-radius": "6px"
+        },
+        ".card" : {
+          "border-radius": "5px",
+          "background-color": "#FFF",
+          "box-shadow": "4px 4px 17px 0px rgba(194, 240, 250, 0.50)",
+          "padding": "50px"
+        },
+        ".card-hover" : {
+          "box-shadow": "4px 4px 21px 0px rgba(105, 213, 237, 0.50)"
         }
       };
       addUtilities(newUtilities, {
