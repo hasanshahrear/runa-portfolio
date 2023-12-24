@@ -14,7 +14,7 @@ export function HeroSection(){
                         <Image src="/img/hand-wave.svg" width="25" height="25" alt="hand wave" />
                     </div> 
                     <Heading className="text-[70px]">Rejuna Hasan</Heading>
-                    <Heading className="text-purple text-[30px]">UI UX Designer . Web Developer</Heading>
+                    <Heading className="text-purple text-[30px]">UI UX Designer.</Heading>
                     <p className=" my-6">
                     Lorem ipsum dolor sit amet consectetur. In velit habitant at nibh a quisque. Tempus ac sagittis a risus felis orci scelerisque eget. Sed laoreet amet nisl nisl imperdiet ornare fermentum sit in. 
                     </p>
