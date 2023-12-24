@@ -2,14 +2,6 @@
 
 import { Heading, Skill } from "@/features/ui";
 
-type TTimelineEvent = {
-    status?: string;
-    date?: string;
-    icon?: string;
-    color?: string;
-    image?: string;
-}
-
 export function SkillSection(){
     return(
         <div className=" bg-[#DFFCF259] pt-28 pb-44">

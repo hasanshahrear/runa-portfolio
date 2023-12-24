@@ -1,8 +1,9 @@
 import { AboutMe } from "./about-me";
-import { HeroSection } from "./hero-section";
+import { HeroSection } from "./hero";
 import { Navbar } from "./navbar";
-import { ServiceSection } from "./service-section";
-import { SkillSection } from "./skill-section";
+import { Portfolio } from "./portfolio";
+import { ServiceSection } from "./service";
+import { SkillSection } from "./skill";
 
 export function Home(){
     return (
@@ -12,6 +13,7 @@ export function Home(){
             <AboutMe/>
             <ServiceSection />
             <SkillSection />
+            <Portfolio />
         </>
     )
 }
