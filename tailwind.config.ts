@@ -14,7 +14,8 @@ const config: Config = {
       colors: {
         "primary": "#0D0B0B",
         "purple": "#9747FF",
-        "gray": "#252323"
+        "gray": "#252323",
+        "link": "#00FF94",
       },
       backgroundClip: {
         text: 'text'
