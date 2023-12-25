@@ -6,7 +6,7 @@ import { Form } from "formik";
 export function ContactForm(){
     return (
         <Form className="flex gap-4 flex-col">
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
                 <FormikTextField 
                     name="name"
                     props={{

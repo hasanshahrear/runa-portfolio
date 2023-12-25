@@ -13,8 +13,8 @@ export function Contact() {
     }
     return (
         <div className=" bg-white pt-28 pb-44">
-            <div className="container grid grid-cols-12 gap-10">
-                <div className="col-span-4">
+            <div className="container grid grid-cols-12 gap-4 lg:gap-10">
+                <div className="col-span-12 lg:col-span-4 ">
                     <Heading>Hire Me</Heading>
                     <p>
                         Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
@@ -25,7 +25,7 @@ export function Contact() {
                         <AddressCard icon={<FaPhoneAlt size="30" className="text-link" />} title="Phone" desc="01315028406" />
                     </div>
                 </div>
-                <div className="col-span-8">
+                <div className="col-span-12 lg:col-span-8">
                     <Formik
                         initialValues={InitialValue}
                         validationSchema={ContactFormSchema}
