@@ -27,6 +27,9 @@ const config: Config = {
       backgroundImage: {
         'gradient-linear': 'linear-gradient(89deg, #00FF94 0.68%, #5FFDFD 80.87%)',
       },
+      boxShadow: {
+        "button-shadow": "6px 8px 10px 0px rgba(0, 255, 148, 0.20)"
+      }
     },
   },
   variants: {

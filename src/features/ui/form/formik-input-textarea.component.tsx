@@ -29,12 +29,7 @@ function TextAreaField({
       <div>
         {label && (
           <label
-            style={{
-              color: "#333333",
-              fontSize: "16px",
-              fontWeight: 500,
-              lineHeight: "20px",
-            }}
+            className="text-primary text-base font-medium leading-10"
             htmlFor={inputId}
           >
             {label}

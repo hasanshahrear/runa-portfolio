@@ -28,7 +28,7 @@ export function ContactForm(){
                 name="subject"
                 props={{
                     label: "Subject",
-                    placeholder: "Ex: Test Subject"
+                    placeholder: "Ex: UI/UX Design"
                 }}
             />
             <FormikTextAreaField 
@@ -39,7 +39,7 @@ export function ContactForm(){
                     requiredIcon: " *"
                 }}
             />
-            <FormikSubmitButton className="w-fit">Submit</FormikSubmitButton>
+            <FormikSubmitButton>Submit</FormikSubmitButton>
         </Form>
     )
 }

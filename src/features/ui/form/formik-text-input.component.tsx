@@ -34,7 +34,7 @@ function TextField({
         {label && (
           <label
             htmlFor={inputId}
-            className={`text-black text-sm font-normal font-inter`}
+            className={`text-primary text-base font-medium leading-10`}
           >
             {label}
           </label>

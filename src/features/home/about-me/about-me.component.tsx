@@ -1,7 +1,6 @@
 "use client"
 import { Heading } from "@/features/ui";
 import Link from "next/link";
-import { Button } from "primereact/button";
 import { FaBehance, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 
@@ -31,24 +30,7 @@ export function AboutMe(){
                             <FaBehance size="30" />
                         </Link>
                     </div>
-                    <div className="space-x-4">
-                        <Button 
-                            label="Read More" 
-                            pt={{
-                                root: {
-                                    className: "btn-primary"
-                                }
-                            }} 
-                        />
-                        <Button 
-                            label="Contact Me" 
-                            pt={{
-                                root: {
-                                    className: "btn-secondary"
-                                }
-                            }} 
-                        />
-                    </div>
+                    
                </div>
             </div>
         </div>

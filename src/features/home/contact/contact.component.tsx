@@ -8,7 +8,7 @@ import { ContactFormSchema, InitialValue, TContactForm } from "./form.config";
 
 export function Contact() {
 
-    const handleSubmit = (values: TContactForm) => {
+    const handleSubmit = async (values: TContactForm) => {
         console.log({values})
     }
     return (

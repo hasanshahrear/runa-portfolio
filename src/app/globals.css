@@ -9,10 +9,44 @@
   @tailwind utilities;
 }
 
-.btn-primary {
-  @apply bg-gradient-linear border-none text-primary
+/* .btn-primary {
+  @apply bg-gradient-linear border-none text-primary shadow-button-shadow
 }
 
 .btn-secondary {
-  @apply global-background border-gradient border-none text-primary
+  @apply global-background border-gradient border-none text-primary hover:bg-gradient-linear
+} */
+
+.btn-primary{
+  background: linear-gradient(to right, #00FF94, #5FD7FD) border-box;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  color: #0D0B0B;
+  box-shadow: 4px 10px 25px 0px rgba(0, 255, 148, 0.20);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to right, #00FF94, #5FD7FD) border-box;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  color: #00FF94;
+  font-weight: 500;
+}
+
+
+.btn-secondary {
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to right, #00FF94, #5FD7FD) border-box;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  color: #00FF94;
+  font-weight: 500;
+}
+.btn-secondary:hover{
+  background: linear-gradient(to right, #00FF94, #5FD7FD) border-box;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  color: #0D0B0B;
+  box-shadow: 4px 10px 25px 0px rgba(0, 255, 148, 0.20);
 }

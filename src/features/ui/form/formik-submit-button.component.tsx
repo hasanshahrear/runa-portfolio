@@ -1,4 +1,3 @@
-import { cn } from '@/lib/utils';
 import { useFormikContext } from 'formik';
 import { Button, ButtonProps } from 'primereact/button';
 import { CgSpinner } from 'react-icons/cg';
@@ -19,10 +18,11 @@ export const FormikSubmitButton = ({
       disabled={disabled || isSubmitting}
       loading={isSubmitting}
       loadingIcon={loadingIcon}
-      className={cn(
-        'btn-primary',
-        className
-      )}
+      pt={{
+        root: {
+            className: "btn-primary w-fit font-medium",
+        }
+    }} 
       {...rest}
     />
   );
