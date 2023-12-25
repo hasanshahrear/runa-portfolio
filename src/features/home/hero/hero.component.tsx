@@ -6,7 +6,7 @@ import { Button } from "primereact/button";
 export function HeroSection(){
     return (
         <div className="bg-[#DFFCF259] " >
-            <div className="container grid grid-cols-12 h-lvh xl:-mt-[104px] items-center justify-between " >
+            <div className="container grid grid-cols-12 h-lvh xl:-mt-[104px] items-center justify-between gap-4 lg:gap-10" >
                 <div className="col-span-12 lg:col-span-6 2xl:col-span-4">
                     <div className="flex gap-4">
                         <Image src="/img/icon-bar.svg" width="25" height="25" alt="Icon bar" />
@@ -37,7 +37,7 @@ export function HeroSection(){
                         />
                     </div>
                 </div>
-                <div className="col-span-12 lg:col-span-6 2xl:col-span-8 lg:ml-auto mt-12 lg:mt-0">
+                <div className="col-span-12 lg:col-span-6 2xl:col-span-8 lg:ml-auto mt-12 lg:mt-0 flex justify-center lg:justify-end">
                     <Image src="/img/user.png" height="490" width="490"  alt="user image"/>
                 </div>
             </div>
