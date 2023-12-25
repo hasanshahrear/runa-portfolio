@@ -5,7 +5,7 @@ type TProps ={
     value: string,
 
 }
-export function Skill({name, value}:TProps){
+export function SkillProgress({name, value}:TProps){
     return(
         <div>
             <div className="flex justify-between mb-2 items-baseline">
