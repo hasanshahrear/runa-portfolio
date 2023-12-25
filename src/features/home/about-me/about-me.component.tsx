@@ -12,7 +12,7 @@ export function AboutMe(){
                <div className="col-span-3">
 
                </div>
-               <div className="col-span-6">
+               <div className="col-span-12 lg:col-span-6">
                     <Heading>About Me</Heading>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. Ultrices amet at varius proin nec felis purus adipiscing. Risus mauris pellentesque interdum phasellus fermentum. Sed porta aliquam in egestas. Diam eros vulputate convallis nunc justo integer non.

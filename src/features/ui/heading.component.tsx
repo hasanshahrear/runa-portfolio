@@ -12,7 +12,7 @@ type TProps = {
 
 export function Heading({ children, className }: TProps) {
   return (
-    <h2 className={cn(`${oxanium.className} font-semibold text-[50px]`, className)}>
+    <h2 className={cn(`${oxanium.className} font-semibold text-[50px] text-primary`, className)}>
       {children}
     </h2>
   );

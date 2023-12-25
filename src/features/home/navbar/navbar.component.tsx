@@ -22,7 +22,7 @@ export function Navbar(){
 
     return (
         <nav className={`sticky top-0 z-50 py-6 transition-all duration-300 ${
-            windowSize === true ? 'bg-white bg-opacity-90 shadow-xl' : 'bg-[#DFFCF259]'
+            windowSize === true ? 'bg-white bg-opacity-90 shadow-xl' : 'transparent'
           }`}>
             <div className="container flex justify-between items-center">
                 <Logo/>

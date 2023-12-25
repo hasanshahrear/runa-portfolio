@@ -5,8 +5,8 @@ import { Button } from "primereact/button";
 
 export function HeroSection(){
     return (
-        <div className="bg-[#DFFCF259]">
-            <div className="container grid grid-cols-12 h-screen items-center justify-between" style={{height:"calc(100vh - 100px)"}}>
+        <div className="bg-[#DFFCF259] " >
+            <div className="container grid grid-cols-12 h-lvh xl:-mt-[104px] items-center justify-between " >
                 <div className="col-span-12 lg:col-span-6 2xl:col-span-4">
                     <div className="flex gap-4">
                         <Image src="/img/icon-bar.svg" width="25" height="25" alt="Icon bar" />
