@@ -7,13 +7,13 @@ export function HeroSection(){
     return (
         <div className="bg-[#DFFCF259]">
             <div className="container grid grid-cols-12 h-screen items-center justify-between" style={{height:"calc(100vh - 100px)"}}>
-                <div className="col-span-4">
+                <div className="col-span-12 lg:col-span-6 2xl:col-span-4">
                     <div className="flex gap-4">
                         <Image src="/img/icon-bar.svg" width="25" height="25" alt="Icon bar" />
                         <p>Hello I am  </p> 
                         <Image src="/img/hand-wave.svg" width="25" height="25" alt="hand wave" />
                     </div> 
-                    <Heading className="text-[70px]">Rejuna Hasan</Heading>
+                    <Heading className=" md:text-[70px]">Rejuna Hasan</Heading>
                     <Heading className="text-purple text-[30px]">UI UX Designer.</Heading>
                     <p className=" my-6">
                     Lorem ipsum dolor sit amet consectetur. In velit habitant at nibh a quisque. Tempus ac sagittis a risus felis orci scelerisque eget. Sed laoreet amet nisl nisl imperdiet ornare fermentum sit in. 
@@ -37,7 +37,7 @@ export function HeroSection(){
                         />
                     </div>
                 </div>
-                <div className="col-span-8 ml-auto">
+                <div className="col-span-12 lg:col-span-6 2xl:col-span-8 lg:ml-auto mt-12 lg:mt-0">
                     <Image src="/img/user.png" height="490" width="490"  alt="user image"/>
                 </div>
             </div>
