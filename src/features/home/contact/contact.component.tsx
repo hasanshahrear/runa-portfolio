@@ -25,7 +25,7 @@ export function Contact() {
                         <AddressCard icon={<FaPhoneAlt size="30" className="text-link" />} title="Phone" desc="01315028406" />
                     </div>
                 </div>
-                <div className="col-span-12 lg:col-span-8">
+                <div className="col-span-12 lg:col-span-8 mt-10 lg:mt-0">
                     <Formik
                         initialValues={InitialValue}
                         validationSchema={ContactFormSchema}
