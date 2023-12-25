@@ -1,6 +1,7 @@
 import { AboutMe } from "./about-me";
 import { Clients } from "./clients";
 import { Contact } from "./contact";
+import { Copyright } from "./copyright";
 import { HeroSection } from "./hero";
 import { Navbar } from "./navbar";
 import { Portfolio } from "./portfolio";
@@ -18,7 +19,7 @@ export function Home(){
             <Portfolio />
             <Clients />
             <Contact />
-
+            <Copyright />
         </>
     )
 }
