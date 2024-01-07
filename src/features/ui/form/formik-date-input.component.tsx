@@ -40,7 +40,7 @@ function DateField({
         {...rest}
       />
 
-      {error && <small className={'p-error'}>{helperText}</small>}
+      {error && <small className="p-error">{helperText}</small>}
       {helperText && !error && <small>{helperText}</small>}
     </div>
   );
@@ -73,8 +73,8 @@ export function FormikDateField({
             apiError
               ? (apiError as string)
               : touched && !!error
-              ? (error as string)
-              : props?.helperText
+                ? (error as string)
+                : props?.helperText
           }
         />
       )}

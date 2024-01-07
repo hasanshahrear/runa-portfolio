@@ -1,2 +1,1 @@
-export { HeroSection } from "./hero.component";
-
+export { HeroSection } from './hero.component';

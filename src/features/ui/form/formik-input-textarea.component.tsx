@@ -1,6 +1,6 @@
-import { Field, FieldProps, GenericFieldHTMLAttributes } from "formik";
-import { InputTextarea, InputTextareaProps } from "primereact/inputtextarea";
-import { useId } from "react";
+import { Field, FieldProps, GenericFieldHTMLAttributes } from 'formik';
+import { InputTextarea, InputTextareaProps } from 'primereact/inputtextarea';
+import { useId } from 'react';
 
 type Props = InputTextareaProps & {
   label?: string;
@@ -15,7 +15,7 @@ function TextAreaField({
   id,
   label,
   disabled,
-  className = "",
+  className = '',
   error,
   helperText,
   requiredIcon,
@@ -35,7 +35,7 @@ function TextAreaField({
             {label}
           </label>
         )}
-        {requiredIcon && <label style={{ color: "red" }}>{requiredIcon}</label>}
+        {requiredIcon && <label style={{ color: 'red' }}>{requiredIcon}</label>}
       </div>
       <InputTextarea
         className={`w-full ${className} `}
@@ -47,7 +47,7 @@ function TextAreaField({
         {...rest}
       />
 
-      {error && <small className={"p-error"}>{helperText}</small>}
+      {error && <small className="p-error">{helperText}</small>}
       {helperText && !error && <small>{helperText}</small>}
     </div>
   );
@@ -71,7 +71,7 @@ export function FormikTextAreaField({
         meta: { touched, error },
         form: { isSubmitting },
       }: FieldProps<string>) => {
-        const hasError = !!apiError || (touched && !!error)
+        const hasError = !!apiError || (touched && !!error);
         return (
           <TextAreaField
             {...field}
@@ -82,8 +82,8 @@ export function FormikTextAreaField({
               apiError
                 ? (apiError as string)
                 : touched && !!error
-                ? (error as string)
-                : props?.helperText
+                  ? (error as string)
+                  : props?.helperText
             }
           />
         );

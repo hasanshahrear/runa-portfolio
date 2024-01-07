@@ -10,26 +10,26 @@ const config: Config = {
     extend: {
       container: {
         center: true,
-        padding: "25px"
+        padding: '25px',
       },
       colors: {
-        "primary": "#0D0B0B",
-        "purple": "#9747FF",
-        "gray": "#252323",
-        "link": "#00FF94",
+        primary: '#0D0B0B',
+        purple: '#9747FF',
+        gray: '#252323',
+        link: '#00FF94',
       },
       backgroundClip: {
-        text: 'text'
+        text: 'text',
       },
       linearGradientColors: {
-        'gradient-90': '90deg, #00FF94 0%, #43DBFD 100%'
+        'gradient-90': '90deg, #00FF94 0%, #43DBFD 100%',
       },
       backgroundImage: {
         'gradient-linear': 'linear-gradient(89deg, #00FF94 0.68%, #5FFDFD 80.87%)',
       },
       boxShadow: {
-        "button-shadow": "6px 8px 10px 0px rgba(0, 255, 148, 0.20)"
-      }
+        'button-shadow': '6px 8px 10px 0px rgba(0, 255, 148, 0.20)',
+      },
     },
   },
   variants: {
@@ -39,28 +39,28 @@ const config: Config = {
     function ({ addUtilities }: any) {
       const newUtilities = {
         '.global-background': {
-          'backgroundImage': 'linear-gradient(to right, #00FF94, #43DBFD)',
+          backgroundImage: 'linear-gradient(to right, #00FF94, #43DBFD)',
           '-webkit-background-clip': 'text',
           '-webkit-text-fill-color': 'transparent',
-          'backgroundClip': 'text',
-          'color': 'transparent'
+          backgroundClip: 'text',
+          color: 'transparent',
         },
-        ".border-gradient" :{
-          "border-width": "2px",
-          "border-style": "solid",
-          "border-image": 'linear-gradient(to right, #00FF94, #43DBFD)',
-          "border-image-slice": "1",
-          "border-radius": "6px"
+        '.border-gradient': {
+          'border-width': '2px',
+          'border-style': 'solid',
+          'border-image': 'linear-gradient(to right, #00FF94, #43DBFD)',
+          'border-image-slice': '1',
+          'border-radius': '6px',
         },
-        ".card" : {
-          "border-radius": "5px",
-          "background-color": "#FFF",
-          "box-shadow": "4px 4px 17px 0px rgba(194, 240, 250, 0.50)",
-          "padding": "50px"
+        '.card': {
+          'border-radius': '5px',
+          'background-color': '#FFF',
+          'box-shadow': '4px 4px 17px 0px rgba(194, 240, 250, 0.50)',
+          padding: '50px',
         },
-        ".card-hover" : {
-          "box-shadow": "4px 4px 21px 0px rgba(105, 213, 237, 0.50)"
-        }
+        '.card-hover': {
+          'box-shadow': '4px 4px 21px 0px rgba(105, 213, 237, 0.50)',
+        },
       };
       addUtilities(newUtilities, {
         variants: ['responsive', 'hover'],

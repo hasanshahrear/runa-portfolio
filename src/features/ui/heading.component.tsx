@@ -1,9 +1,9 @@
-"use client"
+'use client';
 
-import { cn } from "@/lib/utils";
-import { Oxanium } from "next/font/google";
+import { cn } from '@/lib/utils';
+import { Oxanium } from 'next/font/google';
 
-const oxanium = Oxanium({ subsets: ["latin"], variable: "--font-heading" });
+const oxanium = Oxanium({ subsets: ['latin'], variable: '--font-heading' });
 
 type TProps = {
   children: React.ReactNode;

@@ -2,14 +2,14 @@ import { useFormikContext } from 'formik';
 import { Button, ButtonProps } from 'primereact/button';
 import { CgSpinner } from 'react-icons/cg';
 
-export const FormikSubmitButton = ({
+export function FormikSubmitButton({
   type = 'submit',
   disabled,
   outlined,
   className,
   loadingIcon = <CgSpinner className="icon-spin mr-1" />,
   ...rest
-}: ButtonProps) => {
+}: ButtonProps) {
   const { isSubmitting } = useFormikContext();
 
   return (
@@ -20,10 +20,10 @@ export const FormikSubmitButton = ({
       loadingIcon={loadingIcon}
       pt={{
         root: {
-            className: "btn-primary w-fit font-medium",
-        }
-    }} 
+          className: 'btn-primary w-fit font-medium',
+        },
+      }}
       {...rest}
     />
   );
-};
+}

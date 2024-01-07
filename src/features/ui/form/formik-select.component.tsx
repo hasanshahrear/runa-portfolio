@@ -35,7 +35,7 @@ function TextField({
         {label && (
           <label
             htmlFor={inputId}
-            className={`text-black text-sm font-normal font-inter`}
+            className="text-black text-sm font-normal font-inter"
           >
             {label}
           </label>
@@ -51,7 +51,7 @@ function TextField({
           placeholder={placeholder}
           className={cn(
             'h-[42px] rounded-none border border-outline  shadow-none text-sm color-mainText w-full font-inter mt-2',
-            className
+            className,
           )}
           {...rest}
         />
@@ -90,8 +90,8 @@ export function FormikSelectField({
             apiError
               ? (apiError as string)
               : touched && !!error
-              ? (error as string)
-              : props?.helperText
+                ? (error as string)
+                : props?.helperText
           }
         />
       )}

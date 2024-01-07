@@ -34,7 +34,7 @@ function TextField({
         {label && (
           <label
             htmlFor={inputId}
-            className={`text-primary text-base font-medium leading-10`}
+            className="text-primary text-base font-medium leading-10"
           >
             {label}
           </label>
@@ -51,7 +51,7 @@ function TextField({
           autoComplete="off"
           className={cn(
             'w-full',
-            className
+            className,
           )}
           {...rest}
         />
@@ -90,8 +90,8 @@ export function FormikTextField({
             apiError
               ? (apiError as string)
               : touched && !!error
-              ? (error as string)
-              : props?.helperText
+                ? (error as string)
+                : props?.helperText
           }
         />
       )}

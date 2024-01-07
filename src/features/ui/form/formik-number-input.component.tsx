@@ -34,7 +34,7 @@ function NumberField({
         {label && (
           <label
             htmlFor={inputId}
-            className={`text-black text-sm font-normal font-inter`}
+            className="text-black text-sm font-normal font-inter"
           >
             {label}
           </label>
@@ -96,8 +96,8 @@ export function FormikNumberField({
             apiError
               ? (apiError as string)
               : touched && !!error
-              ? (error as string)
-              : props?.helperText
+                ? (error as string)
+                : props?.helperText
           }
         />
       )}

@@ -49,9 +49,7 @@ export function FormikSwitch({
                   name={name}
                   className={className}
                   checked={field.value}
-                  onChange={(e: InputSwitchChangeEvent) =>
-                    setFieldValue(name, e.value ?? false)
-                  }
+                  onChange={(e: InputSwitchChangeEvent) => setFieldValue(name, e.value ?? false)}
                   pt={{
                     slider: {
                       className: `${field.value && 'bg-green'}`,
@@ -61,7 +59,7 @@ export function FormikSwitch({
               </div>
             </div>
             {isFormFieldInvalid && (
-              <div className={'p-error'}>{meta.error}</div>
+              <div className="p-error">{meta.error}</div>
             )}
           </>
         );
