@@ -1,24 +1,24 @@
-'use client';
+"use client";
 
-import { Menubar, MenubarPassThroughMethodOptions } from 'primereact/menubar';
-import { MenuItem } from 'primereact/menuitem';
+import { Menubar, MenubarPassThroughMethodOptions } from "primereact/menubar";
+import { MenuItem } from "primereact/menuitem";
 
 export function MenuItems() {
   const items: MenuItem[] = [
     {
-      label: 'Home',
+      label: "Home",
     },
     {
-      label: 'About Me',
+      label: "About Me",
     },
     {
-      label: 'Services',
+      label: "Services",
     },
     {
-      label: 'Portfolio',
+      label: "Portfolio",
     },
     {
-      label: 'Contact me',
+      label: "Contact me",
     },
   ];
   return (
@@ -26,10 +26,12 @@ export function MenuItems() {
       model={items}
       pt={{
         root: {
-          className: ' bg-transparent border-none font-semibold',
+          className: " bg-transparent border-none font-semibold",
         },
-        action: ({ props, state, context }: MenubarPassThroughMethodOptions) => ({
-          className: context.active ? 'global-background' : 'bg-transparent hover:global-background ',
+        action: ({ context }: MenubarPassThroughMethodOptions) => ({
+          className: context.active
+            ? "global-background"
+            : "bg-transparent hover:global-background ",
         }),
       }}
     />

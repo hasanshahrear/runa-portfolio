@@ -1,7 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link";
 import {
-  FaBehance, FaInstagram, FaLinkedinIn, FaTwitter,
-} from 'react-icons/fa';
+  FaBehance,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 
 export function Copyright() {
   return (
@@ -12,22 +15,37 @@ export function Copyright() {
         </div>
         <div className="col-span-12 md:col-span-6">
           <div className="space-x-4 text-center md:text-right">
-            <Link href="#" className=" inline-block text-purple" aria-label="LinkedinIn">
+            <Link
+              href="#"
+              className=" inline-block text-purple"
+              aria-label="LinkedinIn"
+            >
               <FaLinkedinIn size="30" />
             </Link>
-            <Link href="#" className=" inline-block text-purple" aria-label="Instagram">
+            <Link
+              href="#"
+              className=" inline-block text-purple"
+              aria-label="Instagram"
+            >
               <FaInstagram size="30" />
             </Link>
-            <Link href="#" className=" inline-block text-purple" aria-label="Twitter">
+            <Link
+              href="#"
+              className=" inline-block text-purple"
+              aria-label="Twitter"
+            >
               <FaTwitter size="30" />
             </Link>
-            <Link href="#" className=" inline-block text-purple" aria-label="Behance">
+            <Link
+              href="#"
+              className=" inline-block text-purple"
+              aria-label="Behance"
+            >
               <FaBehance size="30" />
             </Link>
           </div>
         </div>
       </div>
-
     </div>
   );
 }

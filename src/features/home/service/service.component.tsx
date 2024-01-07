@@ -1,5 +1,5 @@
-import { Heading } from '@/features/ui';
-import Image from 'next/image';
+import { Heading } from "@/features/ui";
+import Image from "next/image";
 
 export function ServiceSection() {
   return (
@@ -9,33 +9,56 @@ export function ServiceSection() {
         <div className="col-span-12 lg:col-span-6 text-center">
           <Heading>My Awesome Service</Heading>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices amet at varius proin nec felis purus adipiscing. Risus mauris pellentesque interdum phasellus fermentum. Sed porta aliquam in egestas. Diam eros vulputate convallis nunc justo integer non.
+            Lorem ipsum dolor sit amet consectetur. Ultrices amet at varius
+            proin nec felis purus adipiscing. Risus mauris pellentesque interdum
+            phasellus fermentum. Sed porta aliquam in egestas. Diam eros
+            vulputate convallis nunc justo integer non.
           </p>
         </div>
       </div>
       <div className="container grid grid-cols-12 gap-6">
         <div className="col-span-12 md:col-span-6 lg:col-span-4 space-y-5 card hover:card-hover text-center">
-          <Image src="/img/ui-ux-design.svg" height="136" width="167" alt="ui ux design" className="mx-auto" />
+          <Image
+            src="/img/ui-ux-design.svg"
+            height="136"
+            width="167"
+            alt="ui ux design"
+            className="mx-auto"
+          />
           <Heading className=" text-3xl">UI/UX Design</Heading>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Cursus diam dignissim feugiat ac nullam egestas semper ultricies nam.
+            Lorem ipsum dolor sit amet consectetur. Cursus diam dignissim
+            feugiat ac nullam egestas semper ultricies nam.
           </p>
         </div>
         <div className="col-span-12 md:col-span-6 lg:col-span-4 space-y-5 card hover:card-hover text-center">
-          <Image src="/img/web-development.svg" height="136" width="167" alt="ui ux design" className="mx-auto" />
+          <Image
+            src="/img/web-development.svg"
+            height="136"
+            width="167"
+            alt="ui ux design"
+            className="mx-auto"
+          />
           <Heading className=" text-3xl">Web Development</Heading>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Cursus diam dignissim feugiat ac nullam egestas semper ultricies nam.
+            Lorem ipsum dolor sit amet consectetur. Cursus diam dignissim
+            feugiat ac nullam egestas semper ultricies nam.
           </p>
         </div>
         <div className="col-span-12 md:col-span-6 lg:col-span-4 space-y-5 card hover:card-hover text-center">
-          <Image src="/img/app-design.svg" height="136" width="167" alt="ui ux design" className="mx-auto" />
+          <Image
+            src="/img/app-design.svg"
+            height="136"
+            width="167"
+            alt="ui ux design"
+            className="mx-auto"
+          />
           <Heading className=" text-3xl">App Design</Heading>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Cursus diam dignissim feugiat ac nullam egestas semper ultricies nam.
+            Lorem ipsum dolor sit amet consectetur. Cursus diam dignissim
+            feugiat ac nullam egestas semper ultricies nam.
           </p>
         </div>
-
       </div>
     </div>
   );

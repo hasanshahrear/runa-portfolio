@@ -1,1 +1,1 @@
-export { Copyright } from './copyright.component';
+export { Copyright } from "./copyright.component";

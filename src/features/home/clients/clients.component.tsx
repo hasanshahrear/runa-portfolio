@@ -1,4 +1,4 @@
-import { Heading } from '@/features/ui';
+import { Heading } from "@/features/ui";
 
 export function Clients() {
   return (
@@ -8,7 +8,10 @@ export function Clients() {
         <div className="col-span-12 lg:col-span-6 text-center">
           <Heading>My Clients Love</Heading>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices amet at varius proin nec felis purus adipiscing. Risus mauris pellentesque interdum phasellus fermentum. Sed porta aliquam in egestas. Diam eros vulputate convallis nunc justo integer non.
+            Lorem ipsum dolor sit amet consectetur. Ultrices amet at varius
+            proin nec felis purus adipiscing. Risus mauris pellentesque interdum
+            phasellus fermentum. Sed porta aliquam in egestas. Diam eros
+            vulputate convallis nunc justo integer non.
           </p>
         </div>
       </div>

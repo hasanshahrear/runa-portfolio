@@ -1,28 +1,21 @@
-'use client';
+"use client";
 
-import { Field, FieldProps, useFormikContext } from 'formik';
-import { InputSwitch, InputSwitchChangeEvent } from 'primereact/inputswitch';
+import { Field, FieldProps, useFormikContext } from "formik";
+import { InputSwitch, InputSwitchChangeEvent } from "primereact/inputswitch";
 
 type FormikSwitchProps = {
   name: string;
   label?: string;
   requiredIcon?: string;
-  error?: boolean;
 };
 
-export function FormikSwitch({
-  name,
-  requiredIcon,
-  label,
-  error,
-  ...rest
-}: FormikSwitchProps) {
+export function FormikSwitch({ name, requiredIcon, label }: FormikSwitchProps) {
   const { setFieldValue } = useFormikContext();
   return (
     <Field name={name}>
       {({ field, meta }: FieldProps<boolean>) => {
         const isFormFieldInvalid = meta.touched && meta.error;
-        const className = isFormFieldInvalid ? 'p-invalid' : '';
+        const className = isFormFieldInvalid ? "p-invalid" : "";
         return (
           <>
             <div className="flex flex-row gap-2 align-items-center">
@@ -30,10 +23,10 @@ export function FormikSwitch({
                 {label && (
                   <label
                     style={{
-                      color: '#333333',
-                      fontSize: '16px',
+                      color: "#333333",
+                      fontSize: "16px",
                       fontWeight: 500,
-                      lineHeight: '20px',
+                      lineHeight: "20px",
                     }}
                     htmlFor="item"
                   >
@@ -41,7 +34,9 @@ export function FormikSwitch({
                   </label>
                 )}
                 {requiredIcon && (
-                  <label style={{ color: 'red' }}>{requiredIcon}</label>
+                  <label htmlFor="item" style={{ color: "red" }}>
+                    {requiredIcon}
+                  </label>
                 )}
               </div>
               <div className="card flex justify-content-center">
@@ -49,18 +44,18 @@ export function FormikSwitch({
                   name={name}
                   className={className}
                   checked={field.value}
-                  onChange={(e: InputSwitchChangeEvent) => setFieldValue(name, e.value ?? false)}
+                  onChange={(e: InputSwitchChangeEvent) =>
+                    setFieldValue(name, e.value ?? false)
+                  }
                   pt={{
                     slider: {
-                      className: `${field.value && 'bg-green'}`,
+                      className: `${field.value && "bg-green"}`,
                     },
                   }}
                 />
               </div>
             </div>
-            {isFormFieldInvalid && (
-              <div className="p-error">{meta.error}</div>
-            )}
+            {isFormFieldInvalid && <div className="p-error">{meta.error}</div>}
           </>
         );
       }}

@@ -1,6 +1,6 @@
-import { Field, FieldProps, GenericFieldHTMLAttributes } from 'formik';
-import { InputTextarea, InputTextareaProps } from 'primereact/inputtextarea';
-import { useId } from 'react';
+import { Field, FieldProps, GenericFieldHTMLAttributes } from "formik";
+import { InputTextarea, InputTextareaProps } from "primereact/inputtextarea";
+import { useId } from "react";
 
 type Props = InputTextareaProps & {
   label?: string;
@@ -15,7 +15,7 @@ function TextAreaField({
   id,
   label,
   disabled,
-  className = '',
+  className = "",
   error,
   helperText,
   requiredIcon,
@@ -35,7 +35,11 @@ function TextAreaField({
             {label}
           </label>
         )}
-        {requiredIcon && <label style={{ color: 'red' }}>{requiredIcon}</label>}
+        {requiredIcon && (
+          <label htmlFor={inputId} style={{ color: "red" }}>
+            {requiredIcon}
+          </label>
+        )}
       </div>
       <InputTextarea
         className={`w-full ${className} `}

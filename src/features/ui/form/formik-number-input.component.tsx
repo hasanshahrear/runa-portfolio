@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { cn } from '@/lib/utils';
-import { Field, FieldProps, GenericFieldHTMLAttributes } from 'formik';
-import { InputNumber, InputNumberProps } from 'primereact/inputnumber';
-import { useId } from 'react';
+import { cn } from "@/lib/utils";
+import { Field, FieldProps, GenericFieldHTMLAttributes } from "formik";
+import { InputNumber, InputNumberProps } from "primereact/inputnumber";
+import { useId } from "react";
 
 type Props = InputNumberProps & {
   label?: string;
@@ -39,7 +39,7 @@ function NumberField({
             {label}
           </label>
         )}
-        {requiredIcon && <label>{requiredIcon}</label>}
+        {requiredIcon && <label htmlFor={inputId}>{requiredIcon}</label>}
       </div>
       <div>
         <InputNumber
@@ -50,12 +50,12 @@ function NumberField({
           disabled={disabled}
           onFocus={(e) => e.target.select()}
           placeholder={placeholder}
-          className={cn('w-full', className)}
+          className={cn("w-full", className)}
           pt={{
             input: {
               root: {
                 className:
-                  'h-[42px] rounded-none border border-outline shadow-none text-sm color-mainText w-full font-inter mt-2',
+                  "h-[42px] rounded-none border border-outline shadow-none text-sm color-mainText w-full font-inter mt-2",
               },
             },
           }}

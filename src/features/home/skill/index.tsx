@@ -1,1 +1,1 @@
-export { SkillSection } from './skill.component';
+export { SkillSection } from "./skill.component";

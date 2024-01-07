@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { cn } from '@/lib/utils';
-import { Field, FieldProps, GenericFieldHTMLAttributes } from 'formik';
-import { InputText, InputTextProps } from 'primereact/inputtext';
-import { useId } from 'react';
+import { cn } from "@/lib/utils";
+import { Field, FieldProps, GenericFieldHTMLAttributes } from "formik";
+import { InputText, InputTextProps } from "primereact/inputtext";
+import { useId } from "react";
 
 type Props = InputTextProps & {
   label?: string;
@@ -39,7 +39,11 @@ function TextField({
             {label}
           </label>
         )}
-        {requiredIcon && <label className="text-red-500">{requiredIcon}</label>}
+        {requiredIcon && (
+          <label htmlFor={inputId} className="text-red-500">
+            {requiredIcon}
+          </label>
+        )}
       </div>
       <div>
         <InputText
@@ -49,10 +53,7 @@ function TextField({
           onFocus={(e) => e.target.select()}
           placeholder={placeholder}
           autoComplete="off"
-          className={cn(
-            'w-full',
-            className,
-          )}
+          className={cn("w-full", className)}
           {...rest}
         />
       </div>

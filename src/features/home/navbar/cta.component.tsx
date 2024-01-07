@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { Button } from 'primereact/button';
+import { Button } from "primereact/button";
 
 export function CTA() {
   return (
@@ -8,7 +8,7 @@ export function CTA() {
       label="Download CV"
       pt={{
         root: {
-          className: 'btn-primary',
+          className: "btn-primary",
         },
       }}
     />

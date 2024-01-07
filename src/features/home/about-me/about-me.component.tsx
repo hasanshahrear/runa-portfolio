@@ -1,10 +1,13 @@
-'use client';
+"use client";
 
-import { Heading } from '@/features/ui';
-import Link from 'next/link';
+import { Heading } from "@/features/ui";
+import Link from "next/link";
 import {
-  FaBehance, FaInstagram, FaLinkedinIn, FaTwitter,
-} from 'react-icons/fa';
+  FaBehance,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 
 export function AboutMe() {
   return (
@@ -14,23 +17,41 @@ export function AboutMe() {
         <div className="col-span-12 lg:col-span-6">
           <Heading>About Me</Heading>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices amet at varius proin nec felis purus adipiscing. Risus mauris pellentesque interdum phasellus fermentum. Sed porta aliquam in egestas. Diam eros vulputate convallis nunc justo integer non.
+            Lorem ipsum dolor sit amet consectetur. Ultrices amet at varius
+            proin nec felis purus adipiscing. Risus mauris pellentesque interdum
+            phasellus fermentum. Sed porta aliquam in egestas. Diam eros
+            vulputate convallis nunc justo integer non.
           </p>
           <div className="space-x-4 my-6">
-            <Link href="#" className=" inline-block text-purple" aria-label="LinkedinIn">
+            <Link
+              href="#"
+              className=" inline-block text-purple"
+              aria-label="LinkedinIn"
+            >
               <FaLinkedinIn size="30" />
             </Link>
-            <Link href="#" className=" inline-block text-purple" aria-label="Instagram">
+            <Link
+              href="#"
+              className=" inline-block text-purple"
+              aria-label="Instagram"
+            >
               <FaInstagram size="30" />
             </Link>
-            <Link href="#" className=" inline-block text-purple" aria-label="Twitter">
+            <Link
+              href="#"
+              className=" inline-block text-purple"
+              aria-label="Twitter"
+            >
               <FaTwitter size="30" />
             </Link>
-            <Link href="#" className=" inline-block text-purple" aria-label="Behance">
+            <Link
+              href="#"
+              className=" inline-block text-purple"
+              aria-label="Behance"
+            >
               <FaBehance size="30" />
             </Link>
           </div>
-
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { Heading, SkillProgress } from '@/features/ui';
+import { Heading, SkillProgress } from "@/features/ui";
 
 export function SkillSection() {
   return (
@@ -10,7 +10,10 @@ export function SkillSection() {
         <div className="col-span-12 lg:col-span-6 text-center">
           <Heading>What is my skill</Heading>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices amet at varius proin nec felis purus adipiscing. Risus mauris pellentesque interdum phasellus fermentum. Sed porta aliquam in egestas. Diam eros vulputate convallis nunc justo integer non.
+            Lorem ipsum dolor sit amet consectetur. Ultrices amet at varius
+            proin nec felis purus adipiscing. Risus mauris pellentesque interdum
+            phasellus fermentum. Sed porta aliquam in egestas. Diam eros
+            vulputate convallis nunc justo integer non.
           </p>
         </div>
       </div>

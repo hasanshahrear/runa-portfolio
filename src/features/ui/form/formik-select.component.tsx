@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { cn } from '@/lib/utils';
-import { Field, FieldProps, GenericFieldHTMLAttributes } from 'formik';
-import { Dropdown, DropdownProps } from 'primereact/dropdown';
-import { useId } from 'react';
+import { cn } from "@/lib/utils";
+import { Field, FieldProps, GenericFieldHTMLAttributes } from "formik";
+import { Dropdown, DropdownProps } from "primereact/dropdown";
+import { useId } from "react";
 
 type Props = DropdownProps & {
   label?: string;
@@ -40,7 +40,11 @@ function TextField({
             {label}
           </label>
         )}
-        {requiredIcon && <label className="text-red-500">{requiredIcon}</label>}
+        {requiredIcon && (
+          <label htmlFor={inputId} className="text-red-500">
+            {requiredIcon}
+          </label>
+        )}
       </div>
       <div>
         <Dropdown
@@ -50,7 +54,7 @@ function TextField({
           onFocus={(e) => e.target.select()}
           placeholder={placeholder}
           className={cn(
-            'h-[42px] rounded-none border border-outline  shadow-none text-sm color-mainText w-full font-inter mt-2',
+            "h-[42px] rounded-none border border-outline  shadow-none text-sm color-mainText w-full font-inter mt-2",
             className,
           )}
           {...rest}
@@ -77,12 +81,10 @@ export function FormikSelectField({
   return (
     <Field {...rest}>
       {({
-        field,
         meta: { touched, error },
         form: { isSubmitting },
       }: FieldProps<string>) => (
         <TextField
-          {...field}
           {...props}
           disabled={disabled || isSubmitting}
           error={!!apiError || (touched && !!error)}

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { FormikSubmitButton, FormikTextField } from '@/features/ui';
-import { FormikTextAreaField } from '@/features/ui/form/formik-input-textarea.component';
-import { Form } from 'formik';
+import { FormikSubmitButton, FormikTextField } from "@/features/ui";
+import { FormikTextAreaField } from "@/features/ui/form/formik-input-textarea.component";
+import { Form } from "formik";
 
 export function ContactForm() {
   return (
@@ -11,33 +11,33 @@ export function ContactForm() {
         <FormikTextField
           name="name"
           props={{
-            label: 'Your Name',
-            placeholder: 'Ex: Jon Doe',
-            requiredIcon: ' *',
+            label: "Your Name",
+            placeholder: "Ex: Jon Doe",
+            requiredIcon: " *",
           }}
         />
         <FormikTextField
           name="email"
           props={{
-            label: 'Your Email',
-            placeholder: 'Ex: jondoe@gmail.com',
-            requiredIcon: ' *',
+            label: "Your Email",
+            placeholder: "Ex: jondoe@gmail.com",
+            requiredIcon: " *",
           }}
         />
       </div>
       <FormikTextField
         name="subject"
         props={{
-          label: 'Subject',
-          placeholder: 'Ex: UI/UX Design',
+          label: "Subject",
+          placeholder: "Ex: UI/UX Design",
         }}
       />
       <FormikTextAreaField
         name="message"
         props={{
-          label: 'Your Message',
-          placeholder: 'Explain your message',
-          requiredIcon: ' *',
+          label: "Your Message",
+          placeholder: "Explain your message",
+          requiredIcon: " *",
         }}
       />
       <FormikSubmitButton>Submit</FormikSubmitButton>

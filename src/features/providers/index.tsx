@@ -1,1 +1,1 @@
-export { GlobalProvider } from './global-provider';
+export { GlobalProvider } from "./global-provider";

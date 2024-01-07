@@ -1,1 +1,1 @@
-export { Clients } from './clients.component';
+export { Clients } from "./clients.component";

@@ -1,6 +1,6 @@
-import { Field, FieldProps, GenericFieldHTMLAttributes } from 'formik';
-import { Calendar, CalendarProps } from 'primereact/calendar';
-import { useId } from 'react';
+import { Field, FieldProps, GenericFieldHTMLAttributes } from "formik";
+import { Calendar, CalendarProps } from "primereact/calendar";
+import { useId } from "react";
 
 type CalenderFieldProps = CalendarProps & {
   label?: string;
@@ -29,7 +29,11 @@ function DateField({
     <div className="w-full">
       <div>
         {label && <label htmlFor={inputId}>{label}</label>}
-        {requiredIcon && <label className="text-red-500">{requiredIcon}</label>}
+        {requiredIcon && (
+          <label htmlFor={inputId} className="text-red-500">
+            {requiredIcon}
+          </label>
+        )}
       </div>
 
       <Calendar

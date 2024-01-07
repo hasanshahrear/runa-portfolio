@@ -3,7 +3,8 @@
     "next/core-web-vitals",
     "airbnb",
     "airbnb-typescript",
-    "plugin:import/typescript"
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -11,6 +12,13 @@
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "ignorePatterns": ["next.config.js", "postcss.config.js"],
   "rules": {
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/quotes": "off",
+    "react/no-danger": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/require-default-props": "off",
+    "no-nested-ternary": "off",
+    "import/prefer-default-export": "off"
   }
 }

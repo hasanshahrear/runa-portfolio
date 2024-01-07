@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { cn } from '@/lib/utils';
-import { Field, FieldProps, GenericFieldHTMLAttributes } from 'formik';
-import { InputTextProps } from 'primereact/inputtext';
-import { KeyFilterType } from 'primereact/keyfilter';
-import { Password } from 'primereact/password';
-import { TooltipOptions } from 'primereact/tooltip/tooltipoptions';
-import { useId } from 'react';
+import { cn } from "@/lib/utils";
+import { Field, FieldProps, GenericFieldHTMLAttributes } from "formik";
+import { InputTextProps } from "primereact/inputtext";
+import { KeyFilterType } from "primereact/keyfilter";
+import { Password } from "primereact/password";
+import { TooltipOptions } from "primereact/tooltip/tooltipoptions";
+import { useId } from "react";
 
 type Props = InputTextProps & {
   keyfilter?: KeyFilterType;
@@ -46,7 +46,11 @@ function PasswordField({
             {label}
           </label>
         )}
-        {requiredIcon && <label className="text-red-500">{requiredIcon}</label>}
+        {requiredIcon && (
+          <label htmlFor={inputId} className="text-red-500">
+            {requiredIcon}
+          </label>
+        )}
       </div>
       <div>
         <Password
@@ -56,11 +60,11 @@ function PasswordField({
           disabled={disabled}
           onFocus={(e) => e.target.select()}
           placeholder={placeholder}
-          className={cn('w-full', className)}
+          className={cn("w-full", className)}
           pt={{
             input: {
               className:
-                'h-[42px] rounded border border-outline shadow-none text-sm color-mainText w-full font-inter mt-2',
+                "h-[42px] rounded border border-outline shadow-none text-sm color-mainText w-full font-inter mt-2",
             },
           }}
           {...rest}

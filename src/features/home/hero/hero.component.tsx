@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Heading } from '@/features/ui';
-import Image from 'next/image';
-import { Button } from 'primereact/button';
+import { Heading } from "@/features/ui";
+import Image from "next/image";
+import { Button } from "primereact/button";
 
 export function HeroSection() {
   return (
@@ -10,29 +10,45 @@ export function HeroSection() {
       <div className="container grid grid-cols-12 h-lvh xl:-mt-[104px] items-center justify-between gap-4 lg:gap-10">
         <div className="col-span-12 lg:col-span-6 2xl:col-span-4">
           <div className="flex gap-4">
-            <Image src="/img/icon-bar.svg" width="25" height="25" alt="Icon bar" />
-            <p>Hello I am  </p>
-            <Image src="/img/hand-wave.svg" width="25" height="25" alt="hand wave" />
+            <Image
+              src="/img/icon-bar.svg"
+              width="25"
+              height="25"
+              alt="Icon bar"
+            />
+            <p>Hello I am </p>
+            <Image
+              src="/img/hand-wave.svg"
+              width="25"
+              height="25"
+              alt="hand wave"
+            />
           </div>
           <Heading className=" md:text-[70px]">Rejuna Parvin</Heading>
           <Heading className="text-purple text-[30px]">UI UX Designer.</Heading>
           <p className=" my-6">
-            Lorem ipsum dolor sit amet consectetur. In velit habitant at nibh a quisque. Tempus ac sagittis a risus felis orci scelerisque eget. Sed laoreet amet nisl nisl imperdiet ornare fermentum sit in.
+            Lorem ipsum dolor sit amet consectetur. In velit habitant at nibh a
+            quisque. Tempus ac sagittis a risus felis orci scelerisque eget. Sed
+            laoreet amet nisl nisl imperdiet ornare fermentum sit in.
           </p>
           <div className="flex gap-4">
             <Button
               label="Hire Me"
               pt={{
                 root: {
-                  className: 'btn-primary ',
+                  className: "btn-primary ",
                 },
               }}
             />
-
           </div>
         </div>
         <div className="col-span-12 lg:col-span-6 2xl:col-span-8 lg:ml-auto mt-12 lg:mt-0 flex justify-center lg:justify-end">
-          <Image src="/img/user.png" height="490" width="490" alt="user image" />
+          <Image
+            src="/img/user.png"
+            height="490"
+            width="490"
+            alt="user image"
+          />
         </div>
       </div>
     </div>

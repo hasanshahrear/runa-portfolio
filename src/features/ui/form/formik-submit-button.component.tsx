@@ -1,9 +1,9 @@
-import { useFormikContext } from 'formik';
-import { Button, ButtonProps } from 'primereact/button';
-import { CgSpinner } from 'react-icons/cg';
+import { useFormikContext } from "formik";
+import { Button, ButtonProps } from "primereact/button";
+import { CgSpinner } from "react-icons/cg";
 
 export function FormikSubmitButton({
-  type = 'submit',
+  type = "submit",
   disabled,
   outlined,
   className,
@@ -20,7 +20,7 @@ export function FormikSubmitButton({
       loadingIcon={loadingIcon}
       pt={{
         root: {
-          className: 'btn-primary w-fit font-medium',
+          className: "btn-primary w-fit font-medium",
         },
       }}
       {...rest}
